@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  /* Scene */
+  --scene-bg: #130D1C;
+
+  /* Pastels */
+  --cream: #FFF8E8;
+  --blush: #F5C5B5;
+  --peach: #F2A98A;
+  --coral: #D4736A;
+  --lavender: #E8D9FF;
+  --baby-blue: #DDF4FF;
+  --mint: #DFF7E6;
+
+  /* Text */
+  --text-dark: #5C3320;
+  --text-mid: #9B6B58;
+  --text-light: #C4967F;
+
+  /* UI surfaces */
+  --surface: rgba(255, 248, 232, 0.92);
+  --surface-soft: rgba(255, 248, 232, 0.6);
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-blush: var(--blush);
+  --color-peach: var(--peach);
+  --color-coral: var(--coral);
+  --color-lavender: var(--lavender);
+  --color-baby-blue: var(--baby-blue);
+  --color-mint: var(--mint);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-display);
+}
+
+html, body {
+  background: var(--cream);
+  color: var(--text-dark);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
