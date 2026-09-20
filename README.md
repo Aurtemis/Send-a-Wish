@@ -71,11 +71,5 @@ src/
     parseURL, generateWishURL, textures
   types/
 ```
-## Improvements/Requirements
-  cake
-  number candle
-  envelope UI
-    preview option
-    add photos options
     
   
